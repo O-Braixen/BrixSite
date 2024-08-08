@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Brix</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #333;
+        }
+        .header button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .header button:hover {
+            background-color: #777;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .content .left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content .left img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .content .right {
+            flex: 1;
+            text-align: right;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button onclick="addBrix()">Adicionar Brix</button>
+        <button onclick="showTerms()">Termos de Uso</button>
+        <button onclick="showPrivacy()">Política de Privacidade</button>
+    </div>
+    <div class="content">
+        <div class="left">
+            <img id="selectedImage" src="seu-caminho-da-imagem-aqui.jpg" alt="Imagem selecionada">
+        </div>
+        <div class="right">
+            Prazer, sou o Brix
+        </div>
+    </div>
+
+    <script>
+        function addBrix() {
+            alert("Adicionar Brix clicado!");
+            // Adicione aqui a lógica para adicionar Brix
+        }
+
+        function showTerms() {
+            alert("Termos de Uso clicado!");
+            // Adicione aqui a lógica para exibir os Termos de Uso
+        }
+
+        function showPrivacy() {
+            alert("Política de Privacidade clicado!");
+            // Adicione aqui a lógica para exibir a Política de Privacidade
+        }
+    </script>
+</body>
+</html>
